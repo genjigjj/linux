@@ -1,0 +1,19 @@
+C:\Windows\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /data/linux-3.0/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /data/linux-3.0 -B /data/linux-3.0/cmake-build-debug"
+-- Configuring done
+CMake Error at CMakeLists.txt:18 (add_library):
+  Cannot find source file:
+
+    arch/x86/kernel/cpu/capflags.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:18 (add_library):
+  No SOURCES given to target: kernel
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+
+Problems were encountered while collecting compiler information:
+	cc1: fatal error: ..//data/linux-3.0/arch/x86/kernel/acpi/realmode/../../../boot/code16gcc.h: No such file or directory
